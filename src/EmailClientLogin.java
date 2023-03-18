@@ -8,8 +8,17 @@ public class EmailClientLogin extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // Load the FXML file for the main page
+        /*// Load the FXML file for the main page
         FXMLLoader loader = new FXMLLoader(getClass().getResource("MainInterface.fxml"));
+        Parent root = loader.load();
+
+        // Set the scene
+        Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        */
+        // Load athe FXML file for the login page
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
         Parent root = loader.load();
 
         // Set the scene
