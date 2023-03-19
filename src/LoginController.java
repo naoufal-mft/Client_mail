@@ -17,7 +17,7 @@ public class LoginController {
     private AnchorPane rootPane;
 
     @FXML
-    private TextField emailTextField;
+    private TextField usernameField;
 
     @FXML
     private PasswordField passwordField;
@@ -38,7 +38,7 @@ public class LoginController {
     @FXML
     private void handleLogin() {
         // Get the email and password entered by the user
-        String email = emailTextField != null ? emailTextField.getText() : null;
+        String email = usernameField != null ? usernameField.getText() : null;
         String password = passwordField != null ? passwordField.getText() : null;
 
         if (email == null || email.isEmpty() || password == null || password.isEmpty()) {
